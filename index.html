@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Aos style  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- style sheet  -->
     <link rel="stylesheet" href="./assets/css/app.css" />
     <title>Bootcamp</title>
   </head>
@@ -88,7 +91,7 @@
     </svg>
 
     <!-- Our Courses  -->
-    <section class="course" id="course">
+    <section data-aos="fade-right" class="course" id="course">
       <div class="container">
         <h3 class="text-center display-3 title-primary">Our Courses</h3>
         <div class="title-line mb-5"></div>
@@ -199,7 +202,7 @@
     </section>
 
     <!-- About section  -->
-    <section class="about" id="about">
+    <section data-aos="fade-left" class="about" id="about">
       <div class="container">
         <h3 class="text-center display-3 title-primary">About Us</h3>
         <div class="title-line mb-5"></div>
@@ -231,7 +234,7 @@
     </section>
 
     <!-- CTA section  -->
-    <section class="cta" id="cta">
+    <section data-aos="fade-up" class="cta" id="cta">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <h3 class="text-center display-3 title-primary">Bootcamp</h3>
@@ -262,7 +265,7 @@
     </section>
 
     <!-- Contact section  -->
-    <section class="contact" id="contact">
+    <section data-aos="fade-right" class="contact" id="contact">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-sm-6 col-md-4 col-lg-4 d-flex align-items-center">
@@ -305,7 +308,7 @@
     </section>
 
     <!-- Contact section  -->
-    <footer class="footer" id="footer">
+    <footer data-aos="fade-up-left" class="footer" id="footer">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 text-center">
@@ -332,18 +335,30 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JS  -->
     <script src="./assets/js/bootstrap.bundle.js"></script>
+
+    <!-- FontAwesome JS  -->
     <script
       src="https://kit.fontawesome.com/b5089f2992.js"
       crossorigin="anonymous"
     ></script>
 
+    <!-- AOS JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Dynamic Date -->
     <script>
       const date = document.getElementById("date");
       const year = new Date().getFullYear();
       date.innerHTML = "Copyright © " + year + " | All Right Reserved";
     </script>
 
+    <!-- JS for search query -->
     <script src="./index.js"></script>
   </body>
 </html>
