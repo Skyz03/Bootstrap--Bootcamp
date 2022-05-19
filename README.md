@@ -25,7 +25,7 @@ These main challenge for this Landing Page are:
 
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/42742924/169251505-05287a2b-dc2d-47fa-a800-90ac43ec158b.png)
+![image](https://user-images.githubusercontent.com/42742924/169252747-918b64e9-2e3c-40b4-bdfa-277c788b625a.png)
 
 
 ### Links
