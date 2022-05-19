@@ -10,4 +10,14 @@
       font-size: 1rem;
     }
   }
+
+  &__icon > div {
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+
+  &__icon > div:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
 }

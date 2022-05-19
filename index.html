@@ -32,20 +32,13 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#course"
                 >Courses</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
-
-            <!-- <button type="button" class="rounded-pill btn-rounded">
-              +12134564
-              <span>
-                <i class="text-white fa-lg fa-solid fa-arrow-right icon"></i>
-              </span>
-            </button> -->
           </ul>
         </div>
       </div>
@@ -62,12 +55,14 @@
                 A self-pace coaching program available in Nepal.
               </span>
             </h1>
-            <button type="button" class="rounded-pill btn-rounded">
-              Enquire Now
-              <span>
-                <i class="text-white fa-lg fa-solid fa-arrow-right icon"></i>
-              </span>
-            </button>
+            <a href="mailto:info@bootcamp.com" target="_blank">
+              <button type="button" class="rounded-pill btn-rounded">
+                Enquire Now
+                <span>
+                  <i class="text-white fa-lg fa-solid fa-arrow-right icon"></i>
+                </span>
+              </button>
+            </a>
           </div>
 
           <div class="col-md-6 intros text-end">
@@ -105,18 +100,17 @@
               <input
                 class="form-control me-2"
                 type="search"
+                id="searchComponent"
                 placeholder="Search"
                 aria-label="Search"
+                onkeyup="search()"
               />
-              <button type="button" class="btn btn-primary" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
             </form>
           </div>
         </div>
 
-        <div class="row justify-content-center align-items-center m-5">
-          <div class="col-md-3">
+        <div class="row justify-content-center cards--container">
+          <div class="col-sm col-md-4 col-lg-3 card--container">
             <!-- Card 1 -->
             <div class="card card__dec" style="width: 18rem">
               <img
@@ -124,7 +118,7 @@
                 class="card-img-top"
                 alt="card-one-img"
               />
-              <div class="card-body">
+              <div class="card-body" id="cardBody">
                 <h5 class="card-title">Front-end Development</h5>
                 <p class="card-text">
                   Learn the latest Front-End Frameworks such as React by
@@ -145,14 +139,14 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="col-md-3">
+          <div class="col-sm col-md-4 col-lg-3 card--container">
             <div class="card card__dec" style="width: 18rem">
               <img
                 src="./images/card-two.jpg"
                 class="card-img-top"
                 alt="card-two-img"
               />
-              <div class="card-body">
+              <div class="card-body" id="cardBody">
                 <h5 class="card-title">Back-end Development</h5>
                 <p class="card-text">
                   Learn the latest Back-End Frameworks such as Node by building
@@ -173,14 +167,14 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="col-md-3">
+          <div class="col-sm col-md-4 col-lg-3 card--container">
             <div class="card card__dec" style="width: 18rem">
               <img
                 src="./images/card-three.jpg"
                 class="card-img-top"
                 alt="card-three-img"
               />
-              <div class="card-body">
+              <div class="card-body" id="cardBody">
                 <h5 class="card-title">Project Management</h5>
                 <p class="card-text">
                   Learn the Project Management skill by involving in real
@@ -248,17 +242,19 @@
                 Have Confusion? Call Us now to make your next choice better
               </p>
 
-              <button
-                type="button"
-                class="rounded-pill btn-rounded btn-primary mt-5"
-              >
-                Contact Us
-                <span class="icon-arrow-rev">
-                  <i
-                    class="text-primary fa-lg fa-solid fa-arrow-right icon"
-                  ></i>
-                </span>
-              </button>
+              <a class="cta__link" href="#contact">
+                <button
+                  type="button"
+                  class="rounded-pill btn-rounded btn-primary mt-5"
+                >
+                  Contact Us
+                  <span class="icon-arrow-rev">
+                    <i
+                      class="text-primary fa-lg fa-solid fa-arrow-right icon"
+                    ></i>
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -269,7 +265,7 @@
     <section class="contact" id="contact">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-4 col-lg-4 d-flex align-items-center">
             <div class="contact__container">
               <div class="contact__icon">
                 <i class="fa-solid fa-phone fa-4x"></i>
@@ -281,7 +277,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-4 col-lg-4 d-flex align-items-center">
             <div class="contact__container">
               <div class="contact__icon">
                 <i class="fa-solid fa-envelope-open fa-4x"></i>
@@ -293,7 +289,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-4 col-lg-4 d-flex align-items-center">
             <div class="contact__container">
               <div class="contact__icon">
                 <i class="fa-solid fa-map-location-dot fa-4x"></i>
@@ -317,13 +313,13 @@
               <h4>Bootcamp</h4>
             </div>
             <div class="row justify-content-center m-5 footer__icon">
-              <div class="col-md-3">
+              <div class="col-3 col-md-3">
                 <i class="fa-brands fa-facebook-f fa-lg"></i>
               </div>
-              <div class="col-md-3">
+              <div class="col-3 col-md-3">
                 <i class="fa-brands fa-instagram fa-lg"></i>
               </div>
-              <div class="col-md-3">
+              <div class="col-3 col-md-3">
                 <i class="fa-brands fa-pinterest fa-lg"></i>
               </div>
             </div>
@@ -348,35 +344,6 @@
       date.innerHTML = "Copyright © " + year + " | All Right Reserved";
     </script>
 
-    <!-- <script>
-      const searchFocus = document.getElementById("search-focus");
-      const keys = [
-        { keyCode: "AltLeft", isTriggered: false },
-        { keyCode: "ControlLeft", isTriggered: false },
-      ];
-
-      window.addEventListener("keydown", (e) => {
-        keys.forEach((obj) => {
-          if (obj.keyCode === e.code) {
-            obj.isTriggered = true;
-          }
-        });
-
-        const shortcutTriggered =
-          keys.filter((obj) => obj.isTriggered).length === keys.length;
-
-        if (shortcutTriggered) {
-          searchFocus.focus();
-        }
-      });
-
-      window.addEventListener("keyup", (e) => {
-        keys.forEach((obj) => {
-          if (obj.keyCode === e.code) {
-            obj.isTriggered = false;
-          }
-        });
-      });
-    </script> -->
+    <script src="./index.js"></script>
   </body>
 </html>

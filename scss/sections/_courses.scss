@@ -2,8 +2,39 @@
   padding: 5rem 0;
 }
 
+.cards--container {
+  margin: 3rem !important;
+
+  @include media-breakpoint-down(xxl) {
+    margin: 2rem 0 !important;
+  }
+}
+
 .card {
   text-align: center;
+
+  &--container {
+    margin: 0 1rem;
+    @include media-breakpoint-down(xl) {
+      margin: 0 2rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin: 0 3rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 1rem 0 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &--container:last-child {
+    @include media-breakpoint-down(lg) {
+      margin: 3rem;
+    }
+  }
 
   &-title {
     text-transform: uppercase;
@@ -20,6 +51,7 @@
   }
 
   &__dec {
+    height: 100% !important;
     padding: 2rem !important;
     border-radius: 0 !important;
     background: linear-gradient(
