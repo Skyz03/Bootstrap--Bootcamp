@@ -1,0 +1,19 @@
+@import "../custom";
+@import "../components/mixins";
+.menu {
+  @include gradient;
+  .logo {
+    width: 70%;
+  }
+
+  li {
+    padding: 0 0.7em;
+
+    a {
+      color: $white !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+  }
+}

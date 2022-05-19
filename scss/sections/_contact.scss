@@ -1,0 +1,22 @@
+@import "../custom";
+
+.contact {
+  padding: 3rem 0;
+  background-color: $primary;
+  color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    padding: 7px 2rem;
+  }
+
+  &__text {
+    p {
+      margin: 0;
+    }
+  }
+}

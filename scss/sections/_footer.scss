@@ -1,0 +1,13 @@
+@import "../custom";
+
+.footer {
+  background-color: $primary;
+  color: $white;
+  padding: 5rem 0 0;
+
+  &__copyright {
+    p {
+      font-size: 1rem;
+    }
+  }
+}

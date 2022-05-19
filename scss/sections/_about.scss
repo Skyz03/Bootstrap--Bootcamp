@@ -1,0 +1,14 @@
+.about {
+  &__img-container {
+    text-align: center;
+  }
+  &__img {
+    width: 50%;
+  }
+
+  &__text {
+    p {
+      color: $gray-600;
+    }
+  }
+}

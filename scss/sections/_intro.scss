@@ -1,0 +1,9 @@
+@import "../custom";
+@import "../components/mixins";
+
+.intro-section {
+  background-color: $primary;
+  padding: 10rem 0;
+  width: 100%;
+  height: 100%;
+}

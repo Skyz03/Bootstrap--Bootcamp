@@ -1,0 +1,17 @@
+@use "./custom";
+
+//Import the components
+
+@import "./components/animations", "./components/buttons", "./components/mixins",
+  "./components/typography";
+
+//Import the sections
+
+@import "./sections/about", "./sections/contact", "./sections/courses",
+  "./sections/cta", "./sections/footer", "./sections/intro", "./sections/navbar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

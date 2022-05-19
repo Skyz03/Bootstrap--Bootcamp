@@ -1,0 +1,33 @@
+.course {
+  padding: 5rem 0;
+}
+
+.card {
+  text-align: center;
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  &-text {
+    letter-spacing: 0.05em;
+  }
+
+  button {
+    letter-spacing: 0.02em;
+  }
+
+  &__dec {
+    padding: 2rem !important;
+    border-radius: 0 !important;
+    background: linear-gradient(
+      154.84deg,
+      rgba(20, 0, 255, 0.49) 1.51%,
+      rgba(20, 0, 255, 0) 96.81%
+    );
+    box-shadow: 7px 10px 10px 2px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(30px);
+  }
+}
