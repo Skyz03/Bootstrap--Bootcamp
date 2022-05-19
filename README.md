@@ -30,8 +30,8 @@ These main challenge for this Landing Page are:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/Skyz03/React--Sunny-Landing-Page)
-- Live Site URL: [Live](https://skyz03.github.io/React--Sunny-Landing-Page)
+- Solution URL: [Code](https://github.com/Skyz03/Bootstrap--Bootcamp)
+- Live Site URL: [Live](https://skyz03.github.io/Bootstrap--Bootcamp/)
 
 ## My process
 
